@@ -5,24 +5,22 @@
 
 class Player {
 	private :
-  	int jumlahkoin;
-  public :
-	//ctor
-  	Player();
-	//ctor player dengan koin yang didefenisikan
-    Player(int);
-	//cctor
-    Player(const Player&);
-    //dtor
-	~Player();
-	//operator overloading untuk assignment
-	Player& operator=(const Player&);
-    
-    //Mengembalikan Jumlah koin dari pemain
-    int getJumlahKoin() const;
-
-	//Mengubah nilai koin dari pemain
-    void tambahkoin(int);
+		int jumlahkoin;
+	public :
+		//ctor
+		Player();
+		//ctor player dengan koin yang didefenisikan
+		Player(int);
+		//cctor
+		Player(const Player&);
+		//tidak perlu dtor
+		//~Player();
+		//operator overloading untuk assignment
+		Player& operator=(const Player&);
+	
+		//Mengembalikan Jumlah koin dari pemain
+		int getJumlahKoin() const;
+		//Mengubah nilai koin dari pemain
+		void tambahkoin(int);
 };
-
 #endif
