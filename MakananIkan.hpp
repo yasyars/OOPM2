@@ -3,6 +3,9 @@
 
 #include "BendaAkuarium.hpp"
 
+#define ARAH_MAKANAN_IKAN 90
+#define KEC_MAKANAN_IKAN 10 
+
 class MakananIkan : public BendaAkuarium {
 //Kelas Makanan Ikan ialah turunan dari kelas benda akuarium yang menyimpan 
 //nilai nilai yang dimiliki oleh sebuah makanan ikan
