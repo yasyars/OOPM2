@@ -3,7 +3,7 @@
 
 class Posisi {
 //Kelas Posisi ialah kelas yang menyimpan posisi suatu benda di akuarium
-  	private :
+  	protected :
       	int x; //Untuk menyimpan kordinat x dari sebuah benda
         int y; //Untuk menyimpan kordinat y dari sebuah benda
     public :

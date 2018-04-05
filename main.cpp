@@ -38,7 +38,8 @@ int main( int argc, char* args[] )
         for (auto key : get_pressed_keys()) {
             switch (key) {
             case SDLK_UP:
-                cy -= speed * sec_since_last;
+				if(cy>0)
+					cy -= speed * sec_since_last;
                 break;
             case SDLK_DOWN:
                 cy += speed * sec_since_last;

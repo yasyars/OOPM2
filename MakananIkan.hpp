@@ -10,13 +10,7 @@ class MakananIkan : public BendaAkuarium {
   	static int jumlahmakananikan; //Mengembalikan jumlah makanan ikan yang ada pada akuarium
   public :
   	//Ctor
-  	MakananIkan();
-
-  	//Ctor
-    MakananIkan(const MakananIkan&);
-  	
-    //Dtor
-  	~MakananIkan();
+  	MakananIkan(int x);
     
 	void gerak(); //Update attribut ketika makanan ikan bergerak
 };
