@@ -13,8 +13,8 @@ class Player {
     Player(int);
 	//cctor
     Player(const Player&);
-    //dtor
-	~Player();
+    //tidak perlu dtor
+	//~Player();
 	//operator overloading untuk assignment
 	Player& operator=(const Player&);
     
