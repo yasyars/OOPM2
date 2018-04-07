@@ -15,13 +15,6 @@ Posisi::Posisi(int a, int b){
     x = a;
     y = b;
 }
-//cctor
-Posisi::Posisi(const Posisi& p){
-    x = p.getX(); 
-    y = p.getY();
-}
-//dtor tidak perlu
-//~Posisi();
 
 //operator=
 Posisi& Posisi::operator=(const Posisi& p){
