@@ -10,10 +10,7 @@ class Posisi {
         //Ctor
       	Posisi(); //Menginisiasi nilai x dan y dengan 0 
         Posisi(int, int); //Menginisiasi nilai x dengan parameter int pertama dan nilai y dengan parameter int kedua
-        
-        //operator=
-        Posisi& operator=(const Posisi&);
-
+    
         // sett
         void setX(int); //Untuk mengubah nilai x dengan sebuah parameter
         void setY(int); //Untuk menbubah nilai y dengan integer
