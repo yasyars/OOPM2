@@ -15,12 +15,6 @@ Player::Player(int koin, int telur){
 	banyaktelur = telur;
 }
 
-//operator overloading untuk assignment
-Player& Player::operator=(const Player& p){
-	jumlahkoin = p.getJumlahKoin();
-	banyaktelur = p.getBanyakTelur();
-	return *this;
-}
 //Mengembalikan Jumlah koin dari pemain
 int Player::getJumlahKoin() const{
 	return jumlahkoin;
