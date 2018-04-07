@@ -14,13 +14,6 @@ Player::Player(int koin, int telur){
 	jumlahkoin = koin;
 	banyaktelur = telur;
 }
-//cctor
-Player::Player(const Player& p){
-	jumlahkoin = p.getJumlahKoin();
-	banyaktelur = p.getBanyakTelur();
-}
-//tidak perlu dtor
-//Player::~Player();
 
 //operator overloading untuk assignment
 Player& Player::operator=(const Player& p){
