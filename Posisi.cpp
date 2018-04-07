@@ -16,13 +16,6 @@ Posisi::Posisi(int a, int b){
     y = b;
 }
 
-//operator=
-Posisi& Posisi::operator=(const Posisi& p){
-    x = p.getX();
-    y = p.getY();
-    return *this;
-}
-
 // set
 //Untuk mengubah nilai x dengan sebuah parameter
 void Posisi::setX(int temp){
