@@ -8,7 +8,7 @@
 		class Player :
 			hapus cctor
 			hapus dtor
-			nambah atribut dan mehod buat 'telur'
+			nambah atribut dan method buat 'telur'
 
 		class Posisi :
 			hapus cctor
