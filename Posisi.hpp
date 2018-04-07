@@ -3,8 +3,8 @@
 
 class Posisi {
 //Kelas Posisi ialah kelas yang menyimpan posisi suatu benda di akuarium
-  	private :
-      	int x; //Untuk menyimpan kordinat x dari sebuah benda
+    private :
+        int x; //Untuk menyimpan kordinat x dari sebuah benda
         int y; //Untuk menyimpan kordinat y dari sebuah benda
     public :
         //Ctor
@@ -12,8 +12,8 @@ class Posisi {
         Posisi(int, int); //Menginisiasi nilai x dengan parameter int pertama dan nilai y dengan parameter int kedua
         //cctor
         Posisi(const Posisi&);
-        //dtor
-        ~Posisi();
+        //dtor tidak perlu
+        //~Posisi();
         
         //operator=
         Posisi& operator=(const Posisi&);
@@ -27,7 +27,7 @@ class Posisi {
         int getY() const; //Untuk mengembalikan nilai y
         
         //method
-        friend float hitungjarak(Posisi y, Posisi x); //Untuk menghitung jarak dari 2 posisi
+        friend float hitungjarak(Posisi, Posisi); //Untuk menghitung jarak dari 2 posisi
 };
 
 #endif
