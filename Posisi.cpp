@@ -15,6 +15,20 @@ Posisi::Posisi(double x, double y) {
     this->x = x;
     this->y = y;
 } 
+
+Posisi::Posisi(const Posisi& other) {
+	this->x = other.getX();
+	this->y = other.getY();
+}
+
+Posisi& Posisi::operator=(const Posisi& other) {
+	this->x = other.x;
+	this->y = other.y;
+
+	return *this;
+}
+
+
 // set
 //Untuk mengubah nilai x dengan sebuah parameter
 void Posisi::setX(double temp){
