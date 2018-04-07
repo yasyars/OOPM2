@@ -12,8 +12,6 @@ class Player {
 		Player();
 		//ctor player dengan koin dan banyak telur yang didefenisikan
 		Player(int, int);
-		//operator overloading untuk assignment
-		Player& operator=(const Player&);
 	
 		//Mengembalikan jumlah koin dari pemain
 		int getJumlahKoin() const;
