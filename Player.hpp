@@ -6,11 +6,12 @@
 class Player {
 	private :
 		int jumlahkoin;
+		int banyaktelur;
 	public :
 		//ctor
 		Player();
-		//ctor player dengan koin yang didefenisikan
-		Player(int);
+		//ctor player dengan koin dan banyak telur yang didefenisikan
+		Player(int, int);
 		//cctor
 		Player(const Player&);
 		//tidak perlu dtor
@@ -18,9 +19,13 @@ class Player {
 		//operator overloading untuk assignment
 		Player& operator=(const Player&);
 	
-		//Mengembalikan Jumlah koin dari pemain
+		//Mengembalikan jumlah koin dari pemain
 		int getJumlahKoin() const;
 		//Mengubah nilai koin dari pemain
-		void tambahkoin(int);
+		void tambahKoin(int);
+		//Mengembalikan banyak telur dari pemain
+		int getBanyakTelur() const;
+		//Mengubah banyak telur dari pemain
+		void tambahTelur();
 };
 #endif
