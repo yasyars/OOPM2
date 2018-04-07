@@ -12,10 +12,6 @@ class Player {
 		Player();
 		//ctor player dengan koin dan banyak telur yang didefenisikan
 		Player(int, int);
-		//cctor
-		Player(const Player&);
-		//tidak perlu dtor
-		//~Player();
 		//operator overloading untuk assignment
 		Player& operator=(const Player&);
 	
