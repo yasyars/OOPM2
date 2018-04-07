@@ -14,3 +14,7 @@
 			hapus cctor
 			hapus dtor
 			ubah parameter jarak
+			
+		class Movement :
+			hapus cctor
+			hapus dtor
