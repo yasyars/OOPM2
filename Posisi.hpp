@@ -10,10 +10,6 @@ class Posisi {
         //Ctor
       	Posisi(); //Menginisiasi nilai x dan y dengan 0 
         Posisi(int, int); //Menginisiasi nilai x dengan parameter int pertama dan nilai y dengan parameter int kedua
-        //cctor
-        Posisi(const Posisi&);
-        //dtor tidak perlu
-        //~Posisi();
         
         //operator=
         Posisi& operator=(const Posisi&);
