@@ -1,5 +1,5 @@
-#include<iostream>
-#include"Movement.hpp"
+#include <iostream>
+#include "Movement.hpp"
 
 using namespace std;
 
@@ -9,27 +9,27 @@ Movement::Movement(){
 }
 
 //Menginisiasi nilai arah = x, dan kecepatan = y
-Movement::Movement(int input_arah, int input_kecepatan){
+Movement::Movement(double input_arah, double input_kecepatan){
     arah = input_arah;
     kecepatan = input_kecepatan;
 }
 
 //setter
 //Untuk mengubah arah dari benda
-void Movement::setArah(int a){
+void Movement::setArah(double a){
     arah = a;
 }
 //Untuk mengubah kecepatan dari benda
-void Movement::setKecepatan(int k){
+void Movement::setKecepatan(double k){
     kecepatan = k;
 } 
 
 //getter
 //Untuk mengembalikan nilai arah dari benda
-int Movement::getArah() const{
+double Movement::getArah() const{
     return arah;
 }
 // Untuk mengembalikan nilai kecepatan dari benda
-int Movement::getKecepatan() const{
+double Movement::getKecepatan() const{
     return kecepatan;
 }
