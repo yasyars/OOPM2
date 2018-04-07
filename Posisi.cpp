@@ -11,33 +11,32 @@ Posisi::Posisi(){
     y = 0;
 }
 //Menginisiasi nilai x dengan parameter int pertama dan nilai y dengan parameter int kedua
-Posisi::Posisi(int a, int b){
-    x = a;
-    y = b;
-}
-
+Posisi::Posisi(double x, double y) {
+    this->x = x;
+    this->y = y;
+} 
 // set
 //Untuk mengubah nilai x dengan sebuah parameter
-void Posisi::setX(int temp){
+void Posisi::setX(double temp){
     x = temp;
 }
 //Untuk menbubah nilai y dengan integer
-void Posisi::setY(int temp){
+void Posisi::setY(double temp){
     y = temp;
 }
 
 //getter
 //Untuk mengembalikan nilai x
-int Posisi::getX() const{
+double Posisi::getX() const{
     return x;
 }
 //Untuk mengembalikan nilai y
-int Posisi::getY() const{
+double Posisi::getY() const{
     return y;
 }
 
 //method
 //Untuk menghitung jarak dari 2 posisi
-float hitungjarak(Posisi p1, Posisi p2){
+double hitungjarak(Posisi p1, Posisi p2){
     return sqrt( pow(p1.getX()-p2.getX(), 2) + pow(p1.getY()-p2.getY(), 2) );
 }
