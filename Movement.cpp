@@ -14,6 +14,15 @@ Movement::Movement(double input_arah, double input_kecepatan){
     kecepatan = input_kecepatan;
 }
 
+Movement::Movement(const Movement& x) {
+	this->arah = x.arah;
+	this->kecepatan = x.kecepatan;
+}
+
+Movement::~Movement() {
+	
+}
+
 //setter
 //Untuk mengubah arah dari benda
 void Movement::setArah(double a){
