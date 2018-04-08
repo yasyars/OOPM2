@@ -1,5 +1,5 @@
-#include <iostream>
-#include "Movement.hpp"
+#include<iostream>
+#include"Movement.hpp"
 
 using namespace std;
 
@@ -19,6 +19,7 @@ Movement::Movement(double input_arah, double input_kecepatan){
 void Movement::setArah(double a){
     arah = a;
 }
+
 //Untuk mengubah kecepatan dari benda
 void Movement::setKecepatan(double k){
     kecepatan = k;
